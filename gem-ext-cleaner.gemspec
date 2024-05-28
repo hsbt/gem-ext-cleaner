@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "gem-ext-cleaner"
-  spec.version       = "0.0.1"
+  spec.version       = "0.1.0"
   spec.authors       = ["Hiroshi SHIBATA"]
   spec.email         = ["hsbt@ruby-lang.org"]
 
@@ -12,6 +12,8 @@ Gem::Specification.new do |spec|
   spec.licenses      = ["Ruby", "BSD-2-Clause"]
   spec.required_ruby_version = Gem::Requirement.new(">= 2.4.0")
 
-  spec.files         = "lib/rubygems_plugin.rb"
+  spec.files         = ["lib/rubygems_plugin.rb", "lib/gem-ext-cleaner.rb", "exe/gem-ext-cleaner"]
+  spec.bindir = "exe"
+  spec.executables = s.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 end
