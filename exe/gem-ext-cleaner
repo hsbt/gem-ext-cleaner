@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require "gem-ext-cleaner"
+
+Gem::Specification.each do |spec|
+  next if spec.extensions.empty?
+  GemExtCleaner.clean(spec)
+end
