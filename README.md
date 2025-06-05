@@ -1,3 +1,7 @@
+# This gem is obsoleted
+
+Use https://github.com/hsbt/gem-sweep
+
 # gem-ext-cleaner
 
 This plugin cleans up the native extension files from unnecessary paths.
